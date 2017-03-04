@@ -1,8 +1,10 @@
 body{
 	margin: 0;
 	padding: 0;
+	overflow-x:hidden !important;  
 
 }
+
 ul.all-ul{
 	margin: 0;
 	padding: 0;
@@ -16,8 +18,13 @@ ul.all-ul{
     margin-bottom: 0px;
     border: none;
     border-radius: 0px;
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background: transparent;
+}
+.custom-header.fixedhead .navbar{
+    background-color: rgba(0, 0, 0, 0.70);
+    transition: all ease 2s;
 }
 
 .custom-header .custom-logo {
@@ -130,7 +137,9 @@ ul.all-ul{
 .service-section {
 	background: url(../images/service-background.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    background-attachment: fixed !important;
+    background-position: left top !important;
 }
 .service-section .inner-div{
     background: rgba(0, 0, 0, 0.6);
@@ -287,9 +296,81 @@ ul.all-ul{
 	color: #53C5D5;
 }
 /*TABLE SECTION CSS END*/
+/*START CONTACT SECTION*/
+.custom-contact{
+	background: url(../images/contact-banner.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.back-color{
+	background:rgba(0, 0, 0, 0.6); 
+	padding: 60px 0px !important;
+}
+.custom-contact .contact-header h3{
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 28px;
+}
+.custom-contact .contact-header h3>span{
+	color: #24CAE2;
+	font-weight: bold;
+	font-size: 28px;
+}
+.custom-contact .contact-header .contact-text{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.form-container{
+	padding-bottom: 50px;
+}
+.form-area{
+	padding-top: 40px !important;
+	padding-bottom: 60px !important;
+}
+.form-area .label-area{
+	margin-bottom: 28px !important; 
+}
+.form-area .label-area input[type="text"]{
+	padding: 22px 10px;
+	color: #ffffff;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.label-area input[type="text"]:-ms-input-placeholder{
+	color: #dfdfdf;
+	font-weight: 600;
+	font-size: 14px;
+}
+.label-area input[type="text"]::-moz-placeholder{
+	color: #dfdfdf;
+	font-weight: 600;
+	font-size: 14px;
+}
+.label-area input[type="text"]:-moz-placeholder{
+	color: #dfdfdf;
+	font-weight: 600;
+	font-size: 14px;
+}
+.label-area input[type="text"]::-webkit-input-placeholder{
+	color: #dfdfdf;
+	font-weight: 600;
+	font-size: 14px;
+}
+textarea.message-box{
+	color: #ffffff;
+    background: none !important;
+    box-shadow: none;
+    border-radius: 0px;
+}
+button.send-btn{
 
+}
 
-
+/*CONTACT SECTION END.......*/
 
 /*FOOTER SECTION CSS START HERE*/
 .custom-footer{
@@ -421,10 +502,16 @@ ul.all-ul{
 .input-box ::-moz-placeholder{
 	color: #ffffff;
 }
-.input-box input[type="text"]:-ms-placeholder{
+.input-box input[type="text"]:-ms-input-placeholder{
+	color: #ffffff;
+}
+.input-box input[type="text"]::-moz-placeholder{
 	color: #ffffff;
 }
 .input-box input[type="text"]:-moz-placeholder{
+	color: #ffffff;
+}
+.input-box input[type="text"]::-webkit-input-placeholder{
 	color: #ffffff;
 }
 .custom-footer-buttom{
@@ -477,4 +564,34 @@ ul.all-ul{
 
 
 
+
+
+
+
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+
+
+.carousel-caption span {
+  animation-delay: 1s;
+}
+
+.carousel-caption h3 {
+  animation-delay: 2s;
+}
+
+.carousel-caption p {
+  animation-delay: 3s;
+}
+
+.carousel-caption a {
+  animation-delay: 4s;
+}
 
